@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize("test", "postgres", "password", {
+const sequelize = new Sequelize("test", "root", "password", {
     dialect: "postgres",
     logging : false
 });
