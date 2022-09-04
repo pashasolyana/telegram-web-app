@@ -26,9 +26,7 @@ const style = {
 	p: 4,
 };
 
-const baseUrl = process.env.NODE_ENV === 'production'
-	? '/api'
-	: 'http://localhost:5000/api'
+
 
 const ViewData = ({ data, setData }) => {
 	const [errors, setErrors] = React.useState(null);
@@ -41,13 +39,13 @@ const ViewData = ({ data, setData }) => {
 		onSubmit: async (_values, { resetForm }) => {
 			try {
 				await axios.put(
-					`${baseUrl}/update/${values.id}`,
+					`http://localhost:5000/api/update/${values.id}`,
 					{
 						'value': _values.newValue,
 					},
 				);
 				const response = await axios.get(
-					`${baseUrl}/abonent/${values.abonentId}`,
+					`http://localhost:5000/api/abonent/${values.abonentId}`,
 				);
 
 				setValues(null);
