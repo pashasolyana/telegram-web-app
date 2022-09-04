@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.6544e1fd.css","mappings":"AAAA,KACC,qBAAsB,CACtB,QAAS,CACT,SACD,CAEA,aACC,YACD","sources":["App.css"],"sourcesContent":["body {\r\n\tbox-sizing: border-box;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n\r\n.full_height {\r\n\theight: 100vh;\r\n}\r\n"],"names":[],"sourceRoot":""}
