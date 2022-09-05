@@ -39,13 +39,13 @@ const ViewData = ({ data, setData }) => {
 		onSubmit: async (_values, { resetForm }) => {
 			try {
 				await axios.put(
-					`http://localhost:5000/api/update/${values.id}`,
+					`https://https://pashasolyanaapp.ru/api/update/${values.id}`,
 					{
 						'value': _values.newValue,
 					},
 				);
 				const response = await axios.get(
-					`http://localhost:5000/api/abonent/${values.abonentId}`,
+					`https://https://pashasolyanaapp.ru/api/abonent/${values.abonentId}`,
 				);
 
 				setValues(null);
